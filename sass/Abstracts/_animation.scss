@@ -1,0 +1,18 @@
+
+@-webkit-keyframes showMenu {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: auto;
+  }
+}
+
+@keyframes showMenu {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: auto;
+  }
+}

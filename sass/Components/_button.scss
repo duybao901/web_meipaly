@@ -1,0 +1,49 @@
+.btn-circle {
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  border-radius: 5rem;
+  text-align: center;
+  background-color: #f3f5fa;
+  display: block;
+  color: black;
+  font-size: 1.6rem;
+  -webkit-transition: color .2s ease-out,background-color .3s linear;
+  transition: color .2s ease-out,background-color .3s linear;
+}
+
+.btn-circle:hover {
+  color: white;
+  background-color: #e62b4a;
+}
+
+.mBtn {
+  outline: none;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
+}
+
+.mBtn:focus {
+  outline: none;
+}
+
+.mBtn:hover {
+  background-color: #af2239;
+}
+
+.mBtn--primary {
+  background-color: #e62b4a;
+}

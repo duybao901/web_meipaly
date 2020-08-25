@@ -1,0 +1,14 @@
+
+// Mixins
+@mixin flex($flex,$justyfi,$algin,$wrap) {
+    display: $flex;
+    justify-content:$justyfi;
+    align-items: $algin;
+    flex-wrap: $wrap;
+}
+
+%nav-child-hover{
+    background-color: black;
+    height: auto;              
+    opacity: 1;  
+}
