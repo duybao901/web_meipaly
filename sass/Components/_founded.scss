@@ -1,0 +1,87 @@
+.founded{
+    max-height: 800px;
+    padding-top:100px;
+    background-color:#fff;
+    &__wrapper{
+        @include flex(flex,space-between,flex-start, wrap);
+    }
+    &__content{
+        width: 45%;
+        p{
+            color:$text-color;
+            font-size:1.6rem;
+            letter-spacing: .5px;
+            font-weight: 400;
+        }
+        &-heading{
+            font-size:6rem;
+            font-weight: 400;
+        }
+        &-details{
+            word-spacing: 2px;
+            line-height: 3rem;
+        }
+        button{
+            height: 70px;
+            width: 185px;
+            margin-top:50px;
+            background-color:#000;
+            border-right: 4px solid $text-color-main;
+            transition:all .3s linear;
+            &:hover{
+                background-color:$text-color-main;
+            }
+        }
+    }
+    &__wrap{
+        position:relative;
+        width: 50%;
+        &-block{
+            position: relative;
+            z-index: 3;
+            width: 170px;
+            height: 170px;
+            color:$text-color-white;
+            background-color:$text-color-main;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            flex-direction: column;
+            border-radius:50%;
+            text-align: center;
+            span{
+                display: block;
+            }
+            i{
+                color:rgb(189, 189, 189);
+                font-size: 7rem;               
+            }
+            p{
+                display: block;
+                font-size: 2rem;
+                margin:0;
+                font-weight: 500;
+            }
+        }
+        &-img{
+            filter: grayscale(200%) contrast(50%);
+            border-radius:1px;
+            object-fit: cover;
+        }
+        &-img-1{
+            position: absolute;
+            width: 470px;
+            height: 500px; 
+            top: 0;
+            right: 0;
+        }
+        &-img-2{
+            border:15px solid #fff;
+            position: absolute;
+            img{
+                width: 490px;
+                height: 404px; 
+            }       
+        }
+    }
+}

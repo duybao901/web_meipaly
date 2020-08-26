@@ -7,8 +7,8 @@
     <title>Pelany</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;469;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-js@1/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
     <link rel="stylesheet" href="font/css/all.min.css">
@@ -21,6 +21,7 @@
             <div class="container ">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 flug">
+                        <div class="header__vertical"></div>
                         <div class="header header-blur">
                             <a href="#" class="logo-box">
                                 <i class="fab fa-atlassian logo-box__logo"></i>
@@ -207,33 +208,33 @@
                 </div>
             </div>
         </header>
-        <div class="glider-contain">
-            <div class="glider">
-                <div class="glider-item">
+        <div class="slick-contain">
+            <div class="slick">    
+                <div class="slick-item">
                     <img src="vendor/img/home_slider5.jpg" alt="background">
-                    <div class="glider-item__content">
-                        <h3 class="animated bounce">WELCOME TO MEIPALY AGENCY</h3>
+                    <div class="slick-item__content">
+                        <h3>WELCOME TO MEIPALY AGENCY</h3>
                         <h1>SMART WEB<br />DESIGN AGENCY</h1>
                         <button class="mBtn mBtn--primary">DISCOVER MORE</button>
                     </div>
                 </div>
-                <div class="glider-item">
+                <div class="slick-item slick-item-2" >
                     <img src="vendor/img/home_slider6.jpg" alt="background">
-                    <div class="glider-item-2__content-2">
+                    <div class="slick-item-2__content-2">
                         <div>
                             <i class="fab fa-critical-role"></i>
                             <p>founded in
                                 <br< /> <span>1990</span></p>
                         </div>
                         <h1>DREAM AND BUILD</h1>
-                        <p>There are many variations of passages of lorem but<br>the majority have suffered alteration
+                        <p >There are many variations of passages of lorem but<br>the majority have suffered alteration
                             in some form</p>
                         <button class="mBtn mBtn--primary">DONATE NOW</button>
                     </div>
                 </div>
-                <div class="glider-item glider-item-3">
+                <div class="slick-item slick-item-3">
                     <img src="vendor/img/home_slider7.jpg" alt="background">
-                    <div class="glider-item-3__content-3">
+                    <div class="slick-item-3__content-3">
                         <span></span>
                         <h1>DIGITAL<br />MARKETING<br />AGENCY.</h1>
                         <p>There are many variations of passages of ipsum but the majority have suffered alteration in
@@ -242,9 +243,8 @@
                     </div>
                 </div>
             </div>
-            <button aria-label="Previous" class="glider-prev glider"><i class="fas fa-chevron-left"></i></button>
-            <button aria-label="Next" class="glider-next"><i class="fas fa-chevron-right"></i></button>
-            <div role="tablist" class="dots"></div>
+            <button aria-label="Previous" class="home-arrow-prev"><i class="fas fa-chevron-left"></i></button>
+            <button aria-label="Next" class="home-arrow-next"><i class="fas fa-chevron-right"></i></button>
         </div>
         <div class="modal-menu">
             <div class="modal-menu__blur">
@@ -299,6 +299,151 @@
                 </ul>
             </div>
         </div>
+        <div class="services" style="margin-top: -95px;">
+            <div class="container">
+                <p>SERVICES WE ARE OFFERING</p>
+                <h2 class="services__heading">WE DESIGN DIGITAL PRODUCTS THAT HELP GROW BUSINESSES.</h2>
+                <p class="services__details">We are committed to providing our customers with exceptional service while
+                    offering <br />our employees the best training.</p>
+                <div class="services__slick-container">
+                    <div class="services__slider">
+                        <div class="services__slider-item">
+                            <a href="#" class="services__slider-item-front">
+                                <i class="fab fa-500px"></i>
+                                <p>SEO & CONTENT <br/>WRITING</p>
+                            </a>
+                            <a href="#" class="services__slider-item-back">
+                                <i class="fab fa-500px"></i>
+                                <p>SEO & CONTENT <br />WRITING</p>
+                            </a>
+                        </div>
+                        <div class="services__slider-item">
+                            <a href="#" class="services__slider-item-front">
+                                <i class="fab fa-autoprefixer"></i>
+                                <p>DIGITAL<br/> MARKETING</p>
+                            </a>
+                            <a href="#" class="services__slider-item-back">
+                            <i class="fab fa-autoprefixer"></i>
+                                <p>DIGITAL<br/> MARKETING</p>
+                            </a>
+                        </div>
+                        <div class="services__slider-item">
+                            <a href="#" class="services__slider-item-front">
+                                <i class="fas fa-blog"></i>
+                                <p>WEBSITE<br/>DEVELOPMENT</p>
+                            </a>
+                            <a href="#" class="services__slider-item-back">
+                                <i class="fas fa-blog"></i>
+                                <p>WEBSITE<br />DEVELOPMENT</p>
+                            </a>
+                        </div>
+                        <div class="services__slider-item">
+                            <a href="#" class="services__slider-item-front">
+                                <i class="fas fa-memory"></i>
+                                <p>APP MOBILE<br />DEVELOPMENT</p>
+                            </a>
+                            <a href="#" class="services__slider-item-back">
+                                <i class="fas fa-memory"></i>
+                                <p>APP MOBILE<br />DEVELOPMENT</p>
+                            </a>
+                        </div>
+                        <div class="services__slider-item">
+                            <a href="#" class="services__slider-item-front">
+                                <i class="fab fa-asymmetrik"></i>
+                                <p>DIGITAL<br /> MARKETING</p>
+                            </a>
+                            <a href="#" class="services__slider-item-back">
+                                <i class="fab fa-asymmetrik"></i>
+                                <p>DIGITAL<br /> MARKETING</p>
+                            </a>
+                        </div>
+                        <div class="services__slider-item">
+                            <a href="#" class="services__slider-item-front">
+                                <i class="fab fa-battle-net"></i>
+                                <p>SEO & CONTENT <br />WRITING</p>
+    
+                            </a>
+                            <a href="#" class="services__slider-item-back">
+                                <i class="fab fa-battle-net"></i>
+                                <p>SEO & CONTENT <br/>WRITING</p>
+                            </a>
+                        </div>
+                        <div class="services__slider-item">
+                            <a href="#" class="services__slider-item-front">
+                                <i class="fas fa-dice-d6"></i>
+                                <p>APP MOBILE<br />DEVELOPMENT</p>
+                            </a>
+                            <a href="#" class="services__slider-item-back">
+                                <i class="fas fa-dice-d6"></i>
+                                <p>APP MOBILE<br />DEVELOPMENT</p>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="services__slider-button services__slider-next"><i class="fas fa-long-arrow-alt-right"></i></button>
+                    <button class="services__slider-button services__slider-prev"><i class="fas fa-long-arrow-alt-left"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="founded">
+            <div class="container">
+                <div class="founded__wrapper">
+                    <div class="founded__content">
+                        <p>
+                            WELCOME TO SMART MEIPALY WEB AGENCY
+                        </p>
+                        <h2 class="founded__content-heading">
+                            WE ARE THE BEST WEBSITE AGENCY IN THE WORLD
+                        </h2>
+                        <p class="founded__content-details">
+                            We are committed to providing our customers with exceptional service while offering our employees the best training.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's standard dummy text
+                            ever since the 1500s.
+                        </p>
+                        <button class="mBtn">LEARN MORE</button>
+                    </div>
+                    <div class="founded__wrap">
+                        <div class="founded__wrap-block">
+                            <i class="fab fa-critical-role"></i>
+                            <p>founded in
+                                <br< /> <span>1990</span></p>
+                        </div>
+                        <img src="img/founded_img.jpeg" alt="image" class="founded__wrap-img founded__wrap-img-1">
+                        <div class="founded__wrap-img-2">
+                            <img src="img/founded_img_1.jpeg" alt="image" class="founded__wrap-img ">
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="working">
+            <div class="working__top"></div>
+            <div class="working__bottom"></div>
+            <div class="container working__wrapper">
+                <div class="working__content">      
+                    <p>HOW DO WE WORKS</p>
+                    <h2 class="working__content-heading">DIGITAL EXPERIENCE</h2>
+                    <p class="working__content-details">We are committed to providing our customers with exceptional service while offering our <br/>employees the best training.</p>
+                </div>
+                <div class="working__wrap">
+                    <img src="img/working__img_1.jpeg" alt="img">
+                    <div class="working__warp-box">
+                        <button class="mBtn"><i class="fas fa-caret-right"></i></button>
+                        <p>WATCH VIDEO</p>
+                    </div>
+                </div>
+                <div class="working__subsribes">
+                    <div>
+                        <p>DON’T MISS OUT OUR LATEST UPDATES</p>
+                        <h3>SUBSCRIBE US</h3>
+                    </div>
+                    <div class="working__subsribes-from">
+                        <input type="text">
+                        <button class="mBtn mBtn--black">SUBSCRIBE NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
@@ -315,6 +460,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/slick-js@1/slick.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
 </html>

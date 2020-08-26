@@ -1,0 +1,45 @@
+.working{
+    padding-top:110px;
+    margin-top: 250px;
+    position: relative;
+    &__top{
+        height: 550px;
+        width: 120%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color:#f4f4f4;
+    }
+    &__bottom{
+        height: 550px;
+        top: 50%;
+        left: 0;
+        position: absolute;
+        background-color:#fff;
+    }
+    &__wrapper{
+        position: relative;
+        
+    }
+    &__content{
+        text-align: center;
+        color:$text-color;
+        p{
+            font-size:1.6rem; 
+        }
+        h2{
+            color:#000;
+            font-size:5rem;
+            font-weight: 400;
+            margin-bottom:20px;
+        }
+        &-details{
+            margin-bottom:40px;
+            letter-spacing: .5px;
+            line-height: 3rem;
+        }
+    }
+    &__wrap{
+        
+    }
+}
