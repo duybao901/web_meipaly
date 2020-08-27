@@ -1,45 +1,172 @@
-.working{
-    padding-top:110px;
+.working {
+    padding-top: 110px;
     margin-top: 250px;
     position: relative;
-    &__top{
+    margin-bottom: 122px;
+    &__top {
         height: 550px;
         width: 120%;
         position: absolute;
         top: 0;
         left: 0;
-        background-color:#f4f4f4;
+        background-color: #f4f4f4;
     }
-    &__bottom{
+
+    &__bottom {
         height: 550px;
         top: 50%;
+         width: 120%;
         left: 0;
         position: absolute;
-        background-color:#fff;
+        background-color: #fff;
     }
-    &__wrapper{
+
+    &__wrapper {
         position: relative;
-        
+
     }
-    &__content{
+
+    &__content {
         text-align: center;
-        color:$text-color;
-        p{
-            font-size:1.6rem; 
+        color: #8a8181;
+
+        p {
+            font-size: 1.6rem;
         }
-        h2{
-            color:#000;
-            font-size:5rem;
+
+        h2 {
+            color: #000;
+            font-size: 5rem;
             font-weight: 400;
-            margin-bottom:20px;
+            margin-bottom: 20px;
         }
-        &-details{
-            margin-bottom:40px;
+
+        &-details {
+            margin-bottom: 40px;
             letter-spacing: .5px;
             line-height: 3rem;
         }
     }
-    &__wrap{
-        
+
+    &__wrap {
+        position: relative;
+        text-align: center;
+
+        img {
+            height: 550px;
+            width: 100%;
+            object-fit: cover;
+            filter: grayscale(200%) contrast(50%);
+            box-shadow: 0 2px 10px 1px rgba(0, 0, 0, .5);
+
+        }
+
+        &-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+            &:hover button {
+                background-color: $text-color-main;
+            }
+
+            &:hover p {
+                color: $text-color-main;
+            }
+
+            button {
+                text-align: center;
+                width: 100px;
+                height: 100px;
+                background-color: $text-color-main;
+
+                i {
+                    font-size: 8rem;
+                    margin-left: 10px;
+                }
+
+            }
+
+            p {
+                transition: all .2s linear;
+                margin-top: 15px;
+                color: $text-color-white;
+                font-size: 3.5rem;
+            }
+        }
     }
+
+    &__subsribes {
+        margin-top:95px;
+        @include flex(flex, space-between, center, wrap);
+        div{
+            p{
+                font-size:1.6rem;
+                color:$text-color;
+            }
+            h3{
+                font-size:4.6rem;
+                font-weight:400;
+            }
+        }
+        &-form{
+            @include flex(flex, space-between, center, wrap);
+            input{
+                width: 482px;
+                height: 64px;
+                border:none;
+                border-radius:4px;
+                background-color:#e9e9e9;    
+                font-size:1.6rem;  
+                padding-left: 10px;
+                &:focus{
+                    outline:none;
+                }          
+            }
+            button{
+                margin:0;
+                width: 192px;
+                height: 64px;
+            }
+        }
+    }
+    &__modal{
+        &-content{
+            margin-left: -200px;
+            width: 902px;
+            height: 508px;
+            background-color: transparent !important;
+            border:none;
+            video{
+                height: 100%;
+                width: 100%;
+                outline:none;
+            }
+            img{
+                height: 130%;
+                width: 100%;
+                outline:none;   
+            }
+            button{
+                background: transparent;
+                border:none;
+                float: right;
+                width: 10px;
+                margin-left: auto;
+                font-size:2.5rem;
+                color:white;
+
+                &:focus{
+                    outline:none;
+                }
+            }
+        }
+    }
+
 }

@@ -494,4 +494,27 @@ window.addEventListener('load', function () {
         prevArrow: '.services__slider-prev'
 
     });
+
+    // Showcase
+    $('.showcase__isotope-items').isotope({
+        // options...
+        itemSelector: '.showcase__isotope-item',
+        layoutMode: 'fitRows'
+    });
+
+    // Isopote
+    $('.showcase__button-group button').click(function () {
+
+        // add class
+        $('.showcase__button-group button').removeClass('showcase__filter-button--active');
+        $(this).addClass('showcase__filter-button--active');
+
+        // filter
+        var selector = $(this).attr('data-filter');
+        $('.showcase__isotope-items').isotope({
+            // options...
+            filter  :  selector
+        });
+    })
+
 })

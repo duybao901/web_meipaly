@@ -21,3 +21,8 @@ a:hover{
     text-decoration: none;
     color: currentColor;
 }
+button{
+  &:focus{
+    outline:none;
+  }
+}
