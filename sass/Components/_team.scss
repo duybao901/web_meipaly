@@ -1,0 +1,149 @@
+.team{
+    padding-top:125px;
+    &__content{
+        text-align: center;
+        span{
+            display: block;
+            font-size: 1.8rem;
+            color:$text-color;
+            margin-bottom: 16px;
+        }
+        h2{
+            font-size: 5rem;
+            font-weight: 400;
+            margin-bottom: 16px;
+
+        }
+        p{
+            font-size: 1.6rem;
+            color:$text-color;
+            line-height: 3rem;
+        }
+    }
+    &__sliders{
+        position: relative;
+        &:hover .team__slider-button{ 
+            opacity: 1;
+        }
+    }
+    &__slider{
+        margin-top:64px;
+        width: 100%;
+
+        &-item{
+            position: relative;
+            height: 308px;
+            width: 270px !important;
+            &:hover .team__slider-behide  ul{
+                opacity: 1;
+                bottom: 20px;
+            }
+            &:hover .team__slider-behide  div{
+                opacity: .6;
+                width: 100%;
+            }
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                filter: grayscale(200%) contrast(50%);
+            }
+            ul{
+                position:absolute;
+                bottom: 0;
+            }
+            &-info{
+                text-align: center;
+                margin-top: 20px;
+                a{
+                    color:#000;
+                    font-size: 2rem;
+                    font-weight: 400;
+                    transition:all .1s linear;
+                    &:hover{
+                        color:$text-color-main;
+                    }
+                }
+                p{
+                    font-size: 1.6rem;
+                    color:$text-color;
+                }
+            }
+        }
+        &-button{
+            border:none;
+            height: 40px;
+            width: 40px;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #848482;
+            opacity: 0;
+            transition: all .2s linear; 
+            &:hover{
+                background-color:$text-color-main;
+                color:$text-color-white;
+            }
+            &:focus{
+                outline:none;
+            }
+        }
+        &-next{
+            position: absolute;
+            top: 22%;
+            right: 0;     
+            transform:translate(0%,-100%);
+        }
+        &-prev{
+            position: absolute;
+            top: 22%;
+            left: 0;
+            transform:translate(0%,-100%);
+        }
+        &-behide{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            outline:none;
+            & > div{            
+                position: relative;
+                top: 0;
+                left: 0;
+                width: 0px;
+                height: 100%;
+                background-color: $text-color-main;
+                transition:all .3s linear;  
+            }
+            ul{
+                opacity: 0;
+                position: absolute;
+                left: 50%;
+                bottom: -10px;
+                transform:translate(-50%);
+                transition:all .2s linear;
+                @include flex(flex, space-between, center, wrap);
+                width: 50%;
+                li{
+                    margin-right: 10px;
+                    &:hover a{
+                        background-color: $text-color-main !important;
+                    }
+                    a{
+                        width: 35px;
+                        height: 35px;
+                        font-size: 1.4rem;
+                        transition:all .2s linear;
+                        @include flex(flex, center, center, wrap);                        
+                    }
+                }
+            }
+        }
+    }
+}
+.slick-track{
+    display: flex;
+    justify-content: space-between;
+}

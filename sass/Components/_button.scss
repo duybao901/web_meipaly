@@ -10,6 +10,11 @@
   font-size: 1.6rem;
   -webkit-transition: color .2s ease-out,background-color .3s linear;
   transition: color .2s ease-out,background-color .3s linear;
+
+  &--bg-black{
+    background-color:#000 !important;
+    color: $text-color-white !important;
+  }
 }
 
 .btn-circle:hover {

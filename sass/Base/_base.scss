@@ -21,6 +21,9 @@ a:hover{
     text-decoration: none;
     color: currentColor;
 }
+a:focus{
+  outline:none;
+}
 button{
   &:focus{
     outline:none;

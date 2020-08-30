@@ -30,7 +30,7 @@ window.addEventListener('load', function () {
     search.addEventListener('click', () => {
         searchContent.classList.toggle('search__content--active')
     })
-
+  
     // Home slider
     // new Glider(document.querySelector('.glider'), {
     //     type: 'carousel',
@@ -516,5 +516,26 @@ window.addEventListener('load', function () {
             filter  :  selector
         });
     })
+ 
+    //Number
+    $('.counter__couterup').counterUp({
+        delay: 10,
+        time: 1500
+    });
 
-})
+    // Team
+    $('.team__slider').slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        centerMode: true,
+        centerPadding: '0px',
+        arrows: true,
+        speed: 1500,
+        nextArrow: '.team__slider-next',
+        prevArrow: '.team__slider-prev'
+
+    });
+})  

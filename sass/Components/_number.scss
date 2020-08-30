@@ -1,0 +1,25 @@
+.counter{
+    height:530px;
+    background-color:#000;
+    padding: 100px 0;
+    .container{
+        .row{
+            div{
+                text-align: center;
+                color:$text-color-white;
+                &:not(:last-child){
+                    border-right: 2px solid #888888;
+                }
+                span{
+                    font-size:6rem;
+                    font-weight: 300;
+                }
+                p{
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                    color:#888888;
+                }
+            }
+        }
+    }
+}

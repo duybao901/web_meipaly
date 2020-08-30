@@ -1,0 +1,40 @@
+.trusted{
+    height: 480px;
+    &__wrap{
+        position: relative;
+        height: 100%;
+        padding: 0 174px;
+    }
+    &__img{
+        position: absolute;
+        width: 752px;
+        height: 672px;
+        top: -190px;
+        transform-style: preserve-3d;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            filter: grayscale(200%) contrast(50%);
+        }
+    }
+    &__content{
+        position: absolute;
+        margin-left: 488px;
+        height: 485px;
+        padding: 95px 200px 0 100px;
+        background-color: white;
+        h2{
+            font-size:5rem;
+            font-weight: 400;
+            margin-bottom: 40px;
+        }
+        p{
+            letter-spacing: .5px;
+            color:$text-color;
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 3rem;
+        }
+    }
+}
