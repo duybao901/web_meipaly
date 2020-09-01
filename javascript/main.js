@@ -539,6 +539,7 @@ window.addEventListener('load', function () {
 
     });
 
+    // Our Clients
     $('.our-clients__slider').slick({
         type: 'carousel',
         dots: true,
@@ -552,4 +553,17 @@ window.addEventListener('load', function () {
         nextArrow: '.our-clients__slider-next',
         prevArrow: '.our-clients__slider-prev'
     })
+
+    // Testimonials
+    $('.testimonial__slider').slick({
+        type: 'carousel',     
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,    
+        speed: 1500,   
+        arrows: false,
+    })
+   
 })  

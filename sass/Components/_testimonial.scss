@@ -1,0 +1,79 @@
+.testimonial{
+    max-height: 770px;
+    padding-top:100px;
+    padding-bottom:100px;
+    background-color: #f3f3f3;
+    &__content{
+        text-align: center;
+        h2{
+            font-size: 5rem;
+            font-weight: 400;
+            margin-bottom: 16px;
+
+        }
+        p{
+            font-size: 1.6rem;
+            color:$text-color;
+            line-height: 3rem;
+        }
+    }
+    &__sliders{
+        margin-top:60px;
+    }
+    &__slider{
+        height: 330px;
+        &-item{
+            position: relative;
+            height: 330px;
+            background-color: #ffffff;
+            top: 52px;
+            margin: 0 12px;
+            padding: 80px 60px 0;
+            text-align: center;
+            &-wrap{
+                position: absolute;
+                height: 100px;
+                width: 100px;
+                top: -50px;
+                left: 50%;
+                transform: translateX(-50%);
+                &::after{
+                    content: '"';
+                    font-size: 4rem;
+                    @include flex(flex,center,center,wrap);
+                    position: absolute;
+                    top: 50%;
+                    right: -20%;
+                    transform: translateY(-50%);
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                    background-color: $text-color-main;
+                    color:$text-color-white;     
+                }
+            }
+            img{
+                border-radius: 50%;   
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-info{
+            &-name{
+                font-size: 2.4rem;
+                margin:0;
+            }
+            &-position{
+                font-size: 1.6rem;
+                color:$text-color;
+                margin-bottom: 20px;
+            }
+        }    
+        &-details{
+            font-size: 1.6rem;
+            color:$text-color;
+            line-height: 3rem;
+        }  
+    }
+}
