@@ -538,4 +538,18 @@ window.addEventListener('load', function () {
         prevArrow: '.team__slider-prev'
 
     });
+
+    $('.our-clients__slider').slick({
+        type: 'carousel',
+        dots: true,
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        arrows: true,
+        speed: 1500,
+        nextArrow: '.our-clients__slider-next',
+        prevArrow: '.our-clients__slider-prev'
+    })
 })  

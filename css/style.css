@@ -1321,6 +1321,7 @@ header {
 
 .team {
   padding-top: 125px;
+  height: 750px;
 }
 .team__content {
   text-align: center;
@@ -1355,6 +1356,7 @@ header {
   position: relative;
   height: 308px;
   width: 270px !important;
+  outline: none !important;
 }
 .team__slider-item:hover .team__slider-behide ul {
   opacity: 1;
@@ -1437,7 +1439,7 @@ header {
   width: 0px;
   height: 100%;
   background-color: #e62b4a;
-  transition: all 0.3s linear;
+  transition: all 0.2s linear;
 }
 .team__slider-behide ul {
   opacity: 0;
@@ -1472,6 +1474,115 @@ header {
 .slick-track {
   display: flex;
   justify-content: space-between;
+}
+
+.our-clients {
+  background-color: #f3f3f3;
+  padding-top: 100px;
+  margin-top: 100px;
+  height: 680px;
+}
+.our-clients__content {
+  text-align: center;
+}
+.our-clients__content span {
+  display: block;
+  font-size: 1.8rem;
+  color: #8a8181;
+  margin-bottom: 16px;
+}
+.our-clients__content h2 {
+  font-size: 5rem;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.our-clients__content p {
+  font-size: 1.6rem;
+  color: #8a8181;
+  line-height: 3rem;
+}
+.our-clients__wrap {
+  margin-top: 50px;
+  position: relative;
+}
+.our-clients__wrap:hover .our-clients__slider-button {
+  opacity: 1;
+}
+.our-clients__slider {
+  position: relative;
+}
+.our-clients__slider-item {
+  position: relative;
+  height: 210px;
+  width: 210px;
+  background-color: #ffffff;
+  margin: 8px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  outline: none !important;
+}
+.our-clients__slider-item:hover span {
+  height: 100%;
+}
+.our-clients__slider-item i {
+  font-size: 8rem;
+  color: #a5a5a5;
+}
+.our-clients__slider-item span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 4px;
+  height: 0;
+  transition: all 0.2s linear;
+  background-color: #e62b4a;
+}
+.our-clients__slider-button {
+  border: none;
+  height: 40px;
+  width: 40px;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #848482;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+.our-clients__slider-button:hover {
+  background-color: #e62b4a;
+  color: #ffffff;
+}
+.our-clients__slider-button:focus {
+  outline: none;
+}
+.our-clients__slider-next {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  transform: translate(0%, -100%);
+}
+.our-clients__slider-prev {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  transform: translate(0%, -100%);
+}
+.our-clients__slider .slick-dots {
+  top: 55%;
+}
+.our-clients__slider .slick-dots li button {
+  width: 10px !important;
+  height: 12px !important;
+  background-color: #000 !important;
+  opacity: 0.2 !important;
+  border-radius: 2px;
+  transition: all 0.2s linear;
+}
+.our-clients__slider .slick-dots li.slick-active button {
+  opacity: 1 !important;
+  background-color: #000 !important;
 }
 
 /*# sourceMappingURL=style.css.map */

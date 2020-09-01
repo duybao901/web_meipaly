@@ -1,5 +1,6 @@
 .team{
     padding-top:125px;
+    height: 750px;
     &__content{
         text-align: center;
         span{
@@ -34,6 +35,7 @@
             position: relative;
             height: 308px;
             width: 270px !important;
+            outline:none !important;
             &:hover .team__slider-behide  ul{
                 opacity: 1;
                 bottom: 20px;
@@ -115,7 +117,7 @@
                 width: 0px;
                 height: 100%;
                 background-color: $text-color-main;
-                transition:all .3s linear;  
+                transition:all .2s linear;  
             }
             ul{
                 opacity: 0;

@@ -1,0 +1,114 @@
+.our-clients{
+    background-color:#f3f3f3;
+    padding-top:100px;
+    margin-top: 100px;
+    height: 680px;
+
+    &__content{
+        text-align: center;
+        span{
+            display: block;
+            font-size: 1.8rem;
+            color:$text-color;
+            margin-bottom: 16px;
+        }
+        h2{
+            font-size: 5rem;
+            font-weight: 400;
+            margin-bottom: 16px;
+
+        }
+        p{
+            font-size: 1.6rem;
+            color:$text-color;
+            line-height: 3rem;
+        }
+    }
+    &__wrap{
+        margin-top: 50px;
+        position: relative;
+        &:hover .our-clients__slider-button{ 
+            opacity: 1;
+        }
+    }
+    &__slider{
+        position: relative;
+        &-item{
+            position: relative;
+            height: 210px;
+            width: 210px;
+            background-color: $text-color-white;
+            margin:8px;
+            display:flex !important;
+            justify-content: center;
+            align-items: center;
+            outline:none !important;
+            &:hover span{
+                height: 100%;
+            }
+            i{
+                font-size: 8rem;
+                color:rgb(165, 165, 165);
+            }
+            span{
+                position:absolute;
+                right: 0;
+                top:0;
+                width: 4px;
+                height: 0;
+                transition:all .2s linear;
+                background-color:$text-color-main;
+            }
+        }
+        &-button{
+            border:none;
+            height: 40px;
+            width: 40px;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #848482;
+            opacity: 0;
+            transition: all .2s linear; 
+            &:hover{
+                background-color:$text-color-main;
+                color:$text-color-white;
+            }
+            &:focus{
+                outline:none;
+            }
+        }
+        &-next{
+            position: absolute;
+            top: 20%;
+            right: 0;     
+            transform:translate(0%,-100%);
+        }
+        &-prev{
+            position: absolute;
+            top: 20%;
+            left: 0;
+            transform:translate(0%,-100%);
+        }
+        & .slick-dots{
+            top:55%;
+            li{
+                button{
+                    width: 10px !important;
+                    height: 12px !important;
+                    background-color: #000 !important;
+                    opacity: .2 !important;
+                    border-radius: 2px;
+                    transition: all .2s linear;
+                }
+            }
+            li.slick-active{
+                button{           
+                    opacity: 1 !important;
+                    background-color: #000 !important;
+                }
+            }
+        }
+    }
+}
