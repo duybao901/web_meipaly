@@ -30,7 +30,7 @@ window.addEventListener('load', function () {
     search.addEventListener('click', () => {
         searchContent.classList.toggle('search__content--active')
     })
-  
+
     // Home slider
     // new Glider(document.querySelector('.glider'), {
     //     type: 'carousel',
@@ -50,21 +50,21 @@ window.addEventListener('load', function () {
         dots: true,
         type: 'carousel',
         draggable: false,
-        autoplay:true,
+        autoplay: true,
         autoplaySpeed: 4000,
         slidesToScroll: 1,
         arrows: true,
-        speed:1100,
+        speed: 1100,
         nextArrow: '.home-arrow-next',
         prevArrow: '.home-arrow-prev'
-        
+
     }).on('beforeChange', function (event, slick, currentSlide, nextSlide) {
         if (nextSlide === 0) {
             gsap.to('.slick-item__content h3', {
                 y: 0,
                 opacity: 1,
                 duration: 0.8,
-                delay:.8
+                delay: .8
             })
             gsap.to('.slick-item__content h1', {
                 y: 0,
@@ -76,7 +76,7 @@ window.addEventListener('load', function () {
                 opacity: 1,
                 duration: 0.4,
                 delay: 1.6,
-                y:0,
+                y: 0,
             })
         } else {
             gsap.to('.slick-item__content h3', {
@@ -89,7 +89,7 @@ window.addEventListener('load', function () {
             })
             gsap.to('.slick-item__content button', {
                 opacity: 0,
-                y:40
+                y: 40
             })
         }
         if (nextSlide === 1) {
@@ -97,13 +97,13 @@ window.addEventListener('load', function () {
                 y: 0,
                 opacity: 1,
                 duration: 0.8,
-                delay:0.4
+                delay: 0.4
             })
             gsap.to('.slick-item-2__content-2 h1', {
                 y: 0,
                 opacity: 1,
                 duration: 0.8,
-                delay:0.8
+                delay: 0.8
             })
             gsap.to('.slick-item-2__content-2 > p', {
                 y: 0,
@@ -133,7 +133,7 @@ window.addEventListener('load', function () {
                 y: 70,
                 opacity: 0,
                 duration: 0.8,
-                delay:  .4
+                delay: .4
             })
             gsap.to('.slick-item-2__content-2  button', {
                 y: 30,
@@ -142,8 +142,8 @@ window.addEventListener('load', function () {
                 delay: 1.4
             })
         }
-  
-        if (nextSlide === 2) {     
+
+        if (nextSlide === 2) {
             gsap.to('.slick-item-3__content-3 h1', {
                 x: 0,
                 opacity: 1,
@@ -157,7 +157,7 @@ window.addEventListener('load', function () {
                 delay: 1.2,
             })
             gsap.to('.slick-item-3__content-3 span', {
-                height:"80%",
+                height: "80%",
                 opacity: 1,
                 duration: .6,
                 delay: 2,
@@ -172,7 +172,7 @@ window.addEventListener('load', function () {
             gsap.to('.slick-item-3__content-3 h1', {
                 x: 200,
                 opacity: 0,
-                duration:1
+                duration: 1
             })
             gsap.to('.slick-item-3__content-3 p', {
                 x: -300,
@@ -185,7 +185,7 @@ window.addEventListener('load', function () {
                 duration: 1,
             })
             gsap.to('.slick-item-3__content-3 button', {
-                y:60,
+                y: 60,
                 opacity: 0,
                 duration: 1,
             })
@@ -199,7 +199,7 @@ window.addEventListener('load', function () {
             y: 0,
             opacity: 1,
             duration: 0.8,
-            delay:.8
+            delay: .8
         })
         gsap.to('.slick-item__content h1', {
             y: 0,
@@ -208,7 +208,7 @@ window.addEventListener('load', function () {
             delay: 1
         })
         gsap.to('.slick-item__content button', {
-            y:0,
+            y: 0,
             opacity: 1,
             duration: 0.4,
             delay: 1.6
@@ -226,7 +226,7 @@ window.addEventListener('load', function () {
             opacity: 0
         })
     }
-    
+
 
     // homeNextArrow.addEventListener('click', () => {
     //     if (homeSlick[0].classList[3] === 'slick-active') {
@@ -448,39 +448,39 @@ window.addEventListener('load', function () {
     // })
 
 
-    
+
     // // ******** 3 ********
     // if (homeSlick[1].classList[4] === 'slick-active') {
-       
-        
+
+
     // } else {
-       
-        
-        
+
+
+
     // }
     // homeNextArrow.addEventListener('click', () => {
     //     if (homeSlick[1].classList[4] === 'slick-active') {
-           
-            
-            
+
+
+
     //     } else {
-            
-            
-            
+
+
+
     //     }
     // })
     // homePrevArrow.addEventListener('click', () => {
     //     if (homeSlick[1].classList[4] === 'slick-active') {
-           
-            
-            
+
+
+
     //     } else {
-         
-            
-            
+
+
+
     //     }
     // })
-    
+
     // Services slider
     $('.services__slider').slick({
         infinite: true,
@@ -513,10 +513,10 @@ window.addEventListener('load', function () {
         var selector = $(this).attr('data-filter');
         $('.showcase__isotope-items').isotope({
             // options...
-            filter  :  selector
+            filter: selector
         });
     })
- 
+
     //Number
     $('.counter__couterup').counterUp({
         delay: 10,
@@ -556,13 +556,13 @@ window.addEventListener('load', function () {
 
     // Testimonials
     $('.testimonial__slider').slick({
-        type: 'carousel',     
+        type: 'carousel',
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 4000,    
-        speed: 1500,   
+        autoplaySpeed: 4000,
+        speed: 1500,
         arrows: false,
     })
 
@@ -580,5 +580,14 @@ window.addEventListener('load', function () {
         prevArrow: '.posts__slider-prev'
 
     })
-   
+
+    // Map
+    // function initMap() {
+    //     // The location of Uluru
+    //     var HCMcity = { lat: 10.762622, lng: 106.660172 };
+    //     // The map, centered at Uluru
+    //     var map = new google.maps.Map(
+    //         document.getElementById('maps'), { zoom: 1, center: HCMcity });
+    // }
+    // initMap();
 })  

@@ -1876,4 +1876,9 @@ header {
   left: 0;
 }
 
+#maps {
+  height: 550px;
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
