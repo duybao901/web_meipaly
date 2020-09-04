@@ -1881,4 +1881,208 @@ header {
   width: 100%;
 }
 
+.banner {
+  height: 275px;
+  background-color: #e62b4a;
+}
+.banner .container {
+  height: 100%;
+}
+.banner .container .row {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.banner .container .row h2 {
+  font-size: 4.8rem;
+  font-weight: 400;
+  color: #fff;
+}
+.banner .container .row a {
+  max-width: 229px !important;
+  width: 229px;
+  border-right: 4px solid #fff;
+}
+.banner .container .row a:hover {
+  background-color: white !important;
+  color: #000;
+}
+
+.footer {
+  padding: 100px 0 20px 0;
+  background-color: #000;
+}
+.footer__contact-box {
+  height: 95px;
+  margin-bottom: 125px;
+  background-color: #222;
+  border: 2px solid #555;
+  width: 100%;
+  color: white;
+}
+.footer__contact-box ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.footer__contact-box ul li {
+  width: 33.333334%;
+  padding-left: 20px;
+  display: flex;
+}
+.footer__contact-box ul li:not(:first-child) {
+  border-left: 2px solid #555;
+}
+.footer__contact-box ul li i {
+  display: inline;
+  font-size: 3.5rem;
+  color: #e62b4a;
+  margin-right: 20px;
+}
+.footer__contact-box ul li span {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+.footer__wraper {
+  color: #aaa;
+}
+.footer__wraper div h2 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 25px;
+  color: #fff;
+}
+.footer__wraper div ul {
+  width: 100%;
+}
+.footer__wraper div ul li {
+  width: 100%;
+}
+.footer__wraper-info p {
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+.footer__wraper-info ul {
+  width: 100%;
+  margin-top: 20px;
+}
+.footer__wraper-info ul li {
+  width: 100%;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.footer__wraper-info ul li:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer__wraper-info ul li i {
+  margin-right: 10px;
+  font-size: 2rem;
+}
+.footer__wraper-info ul li span {
+  font-size: 1.3rem;
+}
+.footer__wraper-info ul li a {
+  color: #aaa !important;
+  transition: all 0.2s linear;
+}
+.footer__wraper-info ul li a:hover {
+  color: #e62b4a !important;
+}
+.footer__wraper-link ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+.footer__wraper-link ul li a {
+  font-size: 1.6rem;
+  color: #aaa;
+  width: 50%;
+  transition: all 0.2s linear;
+}
+.footer__wraper-link ul li a:hover {
+  color: #e62b4a !important;
+}
+.footer__wraper-services ul li {
+  margin-bottom: 22px;
+}
+.footer__wraper-services ul li a {
+  font-size: 1.6rem;
+  color: #aaa;
+  width: 50%;
+  transition: all 0.2s linear;
+}
+.footer__wraper-services ul li a:hover {
+  color: #e62b4a !important;
+}
+.footer__wraper-feature ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+.footer__wraper-feature ul li img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.footer__wraper-feature ul li div {
+  width: 180px;
+}
+.footer__wraper-feature ul li div a {
+  font-size: 1.4rem;
+  color: #aaa;
+  transition: all 0.2s linear;
+  display: block;
+  margin-bottom: 20px;
+}
+.footer__wraper-feature ul li div a:hover {
+  color: #e62b4a !important;
+}
+.footer__wraper-feature ul li div span {
+  display: block;
+  margin-top: 10px;
+}
+.footer__bottom {
+  margin-top: 60px;
+}
+.footer__bottom .container {
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer__bottom .container .row {
+  justify-content: space-between;
+}
+.footer__bottom .container .row ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer__bottom .container .row ul li {
+  margin-right: 15px;
+}
+.footer__bottom .container .row ul li a {
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  color: white;
+  display: block;
+  width: 30px;
+  height: 30px;
+  transition: all 0.2s linear;
+}
+.footer__bottom .container .row ul li a:hover {
+  filter: brightness(80%);
+}
+
 /*# sourceMappingURL=style.css.map */
