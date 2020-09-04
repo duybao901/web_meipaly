@@ -52,6 +52,19 @@
         background-color:$text-color-main !important;
     }
   }
+  &--white{
+    height: 70px;
+    width: 185px;
+    margin-top:50px;
+    background-color:#fff;
+    color:#000;
+    border-right: 4px solid $text-color-main;
+    transition:all .3s linear;
+    &:hover{
+        color:#000;
+        background-color:#f1f1f1 !important;
+    }
+  }
 }
 
 .mBtn:focus {

@@ -565,5 +565,20 @@ window.addEventListener('load', function () {
         speed: 1500,   
         arrows: false,
     })
+
+    // post__slider
+    $('.posts__slider').slick({
+        type: 'carousel',
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        speed: 300,
+        arrows: true,
+        nextArrow: '.posts__slider-next',
+        prevArrow: '.posts__slider-prev'
+
+    })
    
 })  

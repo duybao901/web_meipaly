@@ -1,0 +1,78 @@
+.posts{
+    padding: 100px 0;
+    height: 850px;
+    overflow: hidden;
+    &__content{
+        margin-bottom: 50px;
+    }
+    &__sliders{
+        position: relative;
+        &:hover .posts__slider-next,
+        &:hover .posts__slider-prev{
+            opacity: 1;
+        }
+
+    }
+    &__slider{
+        &-item{
+            position: relative;
+            padding: 0 15px;
+            height: 430px;
+            &:hover .posts__slider-item-wrap a.posts__link{
+                text-decoration:underline;
+                color:$text-color-main;
+            }
+            &:hover .posts__slider-item-wrap span{
+                background-color: $text-color-main;
+                color:#fff;
+            }
+            a{
+                cursor: default;
+                position: relative;
+                img{
+                    height: 258px;
+                    width: 100%;
+                }
+            }    
+            &-wrap{
+                width: 86%;
+                background-color: #fff;
+                position: absolute;
+                bottom: 85px;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 30px 60px 10px 25px;
+                height: 100px;
+                span{
+                    color:#fff;
+                    padding: 10px 15px;
+                    font-size: 1.2rem;
+                    background-color:#000;
+                    margin-bottom:20px;
+                    display: block;
+                    width: 65px;
+                }
+                h2{
+                    font-size: 2.4rem;
+                    font-weight: 400;
+                    color:#000;
+                    margin-bottom:20px;
+                }
+                a{
+                    color:#000;
+                    font-size: 1.4rem;
+                }
+            }        
+        }
+        &-next{
+            position: absolute;
+            top: 27%;
+            right:  0;
+        }
+        &-prev{
+            position: absolute;
+            top: 27%;
+            left:  0;
+        }
+    }
+}

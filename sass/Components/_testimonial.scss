@@ -1,5 +1,5 @@
 .testimonial{
-    max-height: 770px;
+    height:  770px;
     padding-top:100px;
     padding-bottom:100px;
     background-color: #f3f3f3;
@@ -21,6 +21,11 @@
         margin-top:60px;
     }
     &__slider{
+        & .slick-list{
+            & .slick-track{
+                height: 430px;
+            }
+        }
         height: 330px;
         &-item{
             position: relative;
